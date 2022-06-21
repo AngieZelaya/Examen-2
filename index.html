@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examen Final</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="app">
+	<section class="panel panel-left panel-cover">
+		<div id="info-panel">
+			<div class="row">
+				<article class="col-40">
+					<img class="img-fluid" src="img/chef.PNG" alt="Profile chef">
+				</article>
+				<article class="col-60">
+					Angie123<br>
+					Chef/Specialist
+				</article>
+			</div>				
+		</div>
+		<div class="list media-list no-margin-top">
+			<ul>
+				<li>
+					<a href="/home/" class="item-link item-content panel-close">
+						<div class="item-media"><i class="material-icons">home</i></div>
+						<div class="item-inner">
+							<div class="item-title">Inicio</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/ver_mas/" class="item-link item-content panel-close">
+						<div class="item-media"><i class="material-icons">search</i></div>
+						<div class="item-inner">
+							<div class="item-title">Detalles</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/chef/" class="item-link item-content">
+						<div class="item-media"><i class="material-icons">add_box</i></div>
+						<div class="item-inner">
+							<div class="item-title">Chef</div>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="/acerca/" class="item-link item-content panel-close">
+						<div class="item-media"><i class="material-icons">info</i></div>
+						<div class="item-inner">
+							<div class="item-title">Acerca del Restaurante</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="/perfil/" class="item-link item-content">
+						<div class="item-media"><i class="material-icons">account_circle</i></div>
+						<div class="item-inner">
+							<div class="item-title">Perfil</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<div class="view view-main view-init">
+		<section data-name="home" class="page">
+			<nav class="navbar">
+				<div class="navbar-bg"></div>
+				<div class="navbar-inner">
+					<div class="title">AngRestaurant</div>
+					<div class="right">
+						<a href="#" class="link panel-open" data-panel="left">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			</nav>
+
+			<section id="main-hero" class="page-content">
+				<h2 class="block-title" style="text-align: center; font-size: 20px;"><strong>Los mas vendidos...</strong></h2>
+
+				<div class="block" style="text-align: center;">
+				  	<div class="row">
+						<article class="col-50">
+							<img class="img-fluid" src="img/sushi.PNG" alt="Imagen sushi" style="width: 700px">
+							<p><strong>SUSHI</strong></p>
+							<p><strong>13$</strong></p>
+							<a href="ver_mas.html"><p><strong>VER MAS</strong></p></a>
+						
+						</article>
+						<article class="col-50">
+							<img class="img-fluid" src="img/pizza.PNG" alt="Imagen pizza" style="width: 700px">
+							<p><Strong>PIZZA</Strong></p>
+							<p><Strong>20$</Strong></p>
+							<a href="ver_mas.html"><p><Strong>VER MAS</Strong></p></a>
+						</article>
+					</div>
+
+					<div class="row">
+						<article class="col-50">
+							<img class="img-fluid" src="img/paella.PNG" alt="Imagen paella" style="width: 700px">
+							<p><strong>PAELLA</strong></p>
+							<p><strong>15$</strong></p>
+							<a href="ver_mas.html"><p><strong>VER MAS</strong></p></a>
+						</article>
+
+						<article class="col-50">
+							<img class="img-fluid" src="img/chop_suey.PNG" alt="Imagen chop suey" style="width: 700px; height:540px">
+							<p><Strong>CHOP SUEY</Strong></p>
+							<p><Strong>17$</Strong></p>
+							<a href="ver_mas.html"><p><strong>VER MAS</strong></p></a>
+						</article>
+					</div>
+
+					<div class="row">
+						<article class="col-50">
+							<img class="img-fluid" src="img/panna_Cota.PNG" alt="Imagen panna cota" style="width: 700px">
+							<p><Strong>PANNA COTA</Strong></p>
+							<p><Strong>13$</Strong></p>
+							<a href="ver_mas.html"><p><Strong>VER MAS</Strong></p></a>
+						
+						</article>
+						<article class="col-50">
+							<img class="img-fluid" src="img/pastel_chocolate.PNG" alt="Imagen pastel" style="width: 700px">
+							<p><strong>TARTA DE CHOCOLATE</strong></p>
+							<p><strong>15$</strong></p>
+							<a href="ver_mas.html"><p><strong>VER MAS</strong></p></a>
+						</article>
+					</div>
+
+				</div>
+
+				
+				<div class="block">
+					<a href="/#/" class="button button-fill"><strong>Platos favoritos</strong></a><br>
+					
+				</div>
+			</section>
+		</section>
+	</div>
+
+	<div class="login-screen modal-in" id="modal-login">
+	  <div class="view">
+		<div class="page login-screen-page">
+		  <div class="page-content login-screen-content">
+			<div class="login-screen-title title">AngRestaurant</div>
+			<form id="form-login">
+			  <div class="list">
+				<ul>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Username</div>
+					  <div class="item-input-wrap">
+						<input type="text" name="username" placeholder="Username" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Password</div>
+					  <div class="item-input-wrap">
+						<input type="password" name="password" placeholder="Password" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="list block">
+				<ul>
+				  <li>
+					<a href="#" class="button button-fill" id="btnLogin">Sign In</a>
+				  </li>
+				  <li>
+					<a href="#" class="button login-screen-close">Acceder como invitado</a>
+				  </li>
+				</ul>
+				<div class="block-footer">¿No tiene una cuenta?<a href="#" class="login-screen-open" data-login-screen="#modal-registro">Regístrate</a></div>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="login-screen" id="modal-registro">
+	  <div>
+		<div class="page">
+		  <div class="page-content login-screen-content">
+			<div class="login-screen-title">Registro</div>
+			<form id="form-registro">
+			  <div class="list">
+				<ul>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Nombre</div>
+					  <div class="item-input-wrap">
+						<input type="text" name="name" placeholder="Nombre" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Correo electrónico</div>
+					  <div class="item-input-wrap">
+						<input type="text" name="e-mail" placeholder="Correo electrónico" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Nombre de Usuario</div>
+					  <div class="item-input-wrap">
+						<input type="text" name="username" placeholder="Nombre de Usuario" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				  <li class="item-content item-input">
+					<div class="item-inner">
+					  <div class="item-title item-label">Password</div>
+					  <div class="item-input-wrap">
+						<input type="password" name="password" placeholder="Password" required>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="list block">
+				<ul>
+				  <li>
+					<a href="#" class="button button-fill">Registrarse</a>
+				  </li>
+				  <li>
+					<a href="#" class="button login-screen-close">Regresar</a>
+				  </li>
+				</ul>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
